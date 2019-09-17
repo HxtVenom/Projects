@@ -1,9 +1,10 @@
+package ruiz_p1;
 
-public class HelloWorld {
+public class encrypt {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
-
+	
 }
