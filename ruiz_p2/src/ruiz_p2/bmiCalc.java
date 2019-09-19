@@ -14,9 +14,9 @@ public class bmiCalc {
 		//Input
 		System.out.println("----Welcome to the BMI calculator----");
 		System.out.println("Enter 'K' for kilos/meters or 'L' for pounds/inches: ");
-		input = scnr.next();
 		
 		while(i == 0) {
+			input = scnr.next();
 			if(input.equalsIgnoreCase("K")) {
 				System.out.println("Enter height in meters: ");
 				height = scnr.nextDouble();
@@ -34,7 +34,7 @@ public class bmiCalc {
 				bmi = (703 * weight) / (height * height);
 				i++;
 			}else {
-				System.out.println("Invalid Input, try again");
+				System.out.println("Invalid Input, try again (K or L): ");
 			}
 		}
 		
