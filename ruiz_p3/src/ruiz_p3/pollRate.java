@@ -52,6 +52,10 @@ public class pollRate {
 				}
 				
 				rate[j][x - 1] = rate[j][x - 1] + 1;
+				
+				while(topics[j].length() < 30) {
+					topics[j] = topics[j].concat(" ");
+				}
 			}
 		}
 		
@@ -79,12 +83,12 @@ public class pollRate {
 		for(int i = 0; i < numTopics; i++) {
 			//Print top of table when first outputting final results
 			if(i == 0) {
-				System.out.println("Topic\t\t\t\t\t\t 1 \t 2\t 3\t 4\t 5\t 6\t 7\t 8\t 9\t 10\t Average");
+				System.out.println("Topic\t\t\t\t\t 1\t 2\t 3\t 4\t 5\t 6\t 7\t 8\t 9\t 10\t Average");
 			}
-			System.out.print((i + 1) + ". " + topics[i] + "\t\t\t"); //PRINT TOPIC NAME
+			System.out.print((i + 1) + ". " + topics[i] + "\t "); //PRINT TOPIC NAME
 			//PRINT TOPIC RATING
 			for(int j = 0; j < numRatings; j++) {
-				System.out.print(rate[i][j] + "\t");
+				System.out.print(rate[i][j] + "\t ");
 			}
 			System.out.printf("%.2f", average[i]); //PRINT TOPIC AVERAGE
 			System.out.println("");
