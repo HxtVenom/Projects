@@ -28,6 +28,8 @@ public class encrypt {
 		
 		//Output
 		System.out.println("Encrypted: " + three + four + one + two);
+		
+		scnr.close(); //Closing Scanner
 
 	}
 	

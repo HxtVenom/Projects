@@ -27,6 +27,7 @@ public class decrypt {
 		
 		//Output
 		System.out.println("Decrypted: " + inArray[2] + inArray[3] + inArray[0] + inArray[1]);
+		scnr.close();
 		
 	}
 
