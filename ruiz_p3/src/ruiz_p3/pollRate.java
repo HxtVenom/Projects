@@ -75,8 +75,6 @@ public class pollRate {
 			}
 		}
 		
-		
-		
 		//Outputs
 		for(int i = 0; i < numTopics; i++) {
 			//Print top of table when first outputting final results
