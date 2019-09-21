@@ -46,6 +46,7 @@ public class bmiCalc {
 		System.out.printf("25-29.9\t\t|\t Overweight\n");
 		System.out.printf(">30\t\t|\t Obesity\n");
 		
+		
 	}
 
 }
