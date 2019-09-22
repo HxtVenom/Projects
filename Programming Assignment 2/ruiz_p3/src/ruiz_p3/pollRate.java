@@ -83,17 +83,19 @@ public class pollRate {
 		for(int i = 0; i < numTopics; i++) {
 			//Print top of table when first outputting final results
 			if(i == 0) {
-				System.out.println("Topic\t\t\t\t\t 1\t 2\t 3\t 4\t 5\t 6\t 7\t 8\t 9\t 10\t Average");
+				System.out.println("Topic\t\t\t\t\t| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | Average");
+				System.out.println("------------------------------------------------------------------------------------------");
 			}
-			System.out.print((i + 1) + ". " + topics[i] + "\t "); //PRINT TOPIC NAME
+			System.out.print((i + 1) + ". " + topics[i] + "\t| "); //PRINT TOPIC NAME
 			//PRINT TOPIC RATING
 			for(int j = 0; j < numRatings; j++) {
-				System.out.print(rate[i][j] + "\t ");
+				System.out.print(rate[i][j] + " | ");
 			}
 			System.out.printf("%.2f", average[i]); //PRINT TOPIC AVERAGE
 			System.out.println("");
 		}
 		
+		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println("");
 		System.out.println("Highest Points: " + topics[highestID] + " with " + highestPoint + " points");
 		System.out.println("Lowest Points: " + topics[lowestID] + " with " + lowestPoint + " points");
